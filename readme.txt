@@ -1,0 +1,5 @@
+Q3 JSON Table:
+
+	The goal is to create an HTML table using a JSON collection. The table is dynamically populated with employee names columnwise. Every 4th name should be highlighted in red. The number of rows is determined by user input 1-100. The number of columns is dynamically calculated to accomodate all employees. Data should be sorted by last name descending and, if last name is the same, first name ascending.
+
+	To accomplish this goal, I started by accepting user input, restricting to values 1-100, and creating an html table using JavaScript createElement. The number of rows is determined by the user input and the number of colums is determined by dividing the number of entries in my JSON data by the number of rows. This number is rounded up to a whole number to accomodate all of the JSON entries. The entries are sorted by last name. If last names are the same, first name is used to sort. Once the entries are sorted, they are added to the table cell by cell. Every 4th entry, the background is changed to red. This is done until all entries are added to the table.
